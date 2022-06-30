@@ -1,0 +1,36 @@
+.primerSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+.logo {
+    color: white;
+    text-decoration: none;
+}
+.divMovie {
+    padding: 5px;
+    background-color: #C5201B;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imagenIconoPelicula {
+    filter: invert(1);
+}
+.primerSectionDivP {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    background-color: #C5201B;
+    font-weight: 700;
+}
+.divFree {
+    display: none;
+}
+@media screen and (min-width:500px){
+    .divFree {
+        display: initial;
+    }
+}

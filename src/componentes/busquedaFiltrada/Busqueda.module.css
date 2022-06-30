@@ -1,0 +1,67 @@
+.form {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:#C5201B;
+    padding: 10px;
+    position: relative;
+}
+.input {
+    border-radius: 20px;
+    padding: 5px;
+    outline: none;
+    border: thin solid gray;
+    padding-left: 30px;
+}
+.boton {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+}
+.iconoLupa {
+    position: absolute;
+    filter: invert(0.5);
+    z-index: 10;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+}
+.divRaiting {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap: 5px;
+}
+.raiting {
+    color: white;
+    margin: 0%;
+}
+.divStars {
+    display: flex;
+    gap: 5px;
+}
+.imagenEstrella {
+    filter: grayscale(1);
+    cursor: pointer;
+}
+input[type=checkbox] {
+    display: none;
+}
+/* Estas reglas se aplicarán a todos los .imagenEstrella despues 
+de un input de tipo checkbox*/
+input[type=checkbox]:checked + .imagenEstrella{
+    filter: opacity(1);
+}
+
+@media screen and (min-width:500px){
+    .form {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input {
+        width: 300px;
+    }
+}
